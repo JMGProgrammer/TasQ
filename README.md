@@ -28,7 +28,7 @@
 
 ---
 
-<img src="/public/screenshots/ss1.PNG" width="300" alt="screenshot1">
+<img src="/public/screenshots/ss1.PNG" width="1200" alt="screenshot1">
 
 ---
 
