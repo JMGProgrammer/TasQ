@@ -8,15 +8,15 @@
 
 ## Stack
 
-| Capa          | Tecnología                       |
-|---------------|----------------------------------|
-| Frontend      | React + Next.js (App Router)     |
-| Backend       | Next.js API Routes               |
-| Base de datos | Neon (PostgreSQL serverless)     |
-| ORM           | Prisma                           |
-| Estilos       | Tailwind CSS v4                  |
-| Testing       | Vitest                           |
-| Iconos        | Lucide React                     |
+| Capa          | Tecnología                   |
+| ------------- | ---------------------------- |
+| Frontend      | React + Next.js (App Router) |
+| Backend       | Next.js API Routes           |
+| Base de datos | Neon (PostgreSQL serverless) |
+| ORM           | Prisma                       |
+| Estilos       | Tailwind CSS v4              |
+| Testing       | Vitest                       |
+| Iconos        | Lucide React                 |
 
 ---
 
@@ -25,6 +25,10 @@
 - Node.js 22 LTS o superior
 - npm 10+ o pnpm
 - Una cuenta en [Neon](https://neon.tech) (gratuita, para la base de datos)
+
+---
+
+<img src="/public/screenshots/ss1.PNG" width="300" alt="screenshot1">
 
 ---
 
@@ -58,17 +62,17 @@ Abrir [http://localhost:3000](http://localhost:3000).
 
 ## Comandos disponibles
 
-| Comando                  | Descripción                             |
-|--------------------------|-----------------------------------------|
-| `npm run dev`            | Inicia servidor de desarrollo           |
-| `npm run build`          | Compila para producción                 |
-| `npm run lint`           | Ejecuta linter                          |
-| `npm test`               | Ejecuta tests unitarios                 |
-| `npm run test:watch`     | Tests en modo watch                     |
-| `npx prisma generate`    | Genera el cliente Prisma                |
-| `npx prisma migrate dev` | Crea y aplica una migración             |
-| `npx prisma db push`     | Sincroniza schema con la base de datos  |
-| `npx prisma studio`      | Abre el explorador visual de datos      |
+| Comando                  | Descripción                            |
+| ------------------------ | -------------------------------------- |
+| `npm run dev`            | Inicia servidor de desarrollo          |
+| `npm run build`          | Compila para producción                |
+| `npm run lint`           | Ejecuta linter                         |
+| `npm test`               | Ejecuta tests unitarios                |
+| `npm run test:watch`     | Tests en modo watch                    |
+| `npx prisma generate`    | Genera el cliente Prisma               |
+| `npx prisma migrate dev` | Crea y aplica una migración            |
+| `npx prisma db push`     | Sincroniza schema con la base de datos |
+| `npx prisma studio`      | Abre el explorador visual de datos     |
 
 ---
 
@@ -107,11 +111,11 @@ prisma/
 
 Los documentos de diseño y especificación se encuentran en la carpeta [`sdd/`](sdd/):
 
-| Archivo | Contenido |
-|---------|-----------|
-| `sdd/functional-specs.md` | Especificaciones funcionales (requisitos, reglas de negocio, UX) |
+| Archivo                   | Contenido                                                          |
+| ------------------------- | ------------------------------------------------------------------ |
+| `sdd/functional-specs.md` | Especificaciones funcionales (requisitos, reglas de negocio, UX)   |
 | `sdd/technical-specs.md`  | Especificaciones técnicas (arquitectura, API, componentes, schema) |
-| `sdd/phases.md`           | Plan de trabajo por fases con estimaciones |
+| `sdd/phases.md`           | Plan de trabajo por fases con estimaciones                         |
 
 > ⚠️ Este README debe mantenerse sincronizado con los cambios del proyecto. Si se modifican rutas, dependencias o funcionalidades, actualiza este documento.
 
