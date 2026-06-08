@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model List {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String
+  color     String   @default("#3B82F6")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  tasks     Task[]
+
+  @@map("lists")
+}
+
+model Task {
+  id          String   @id @default(uuid()) @db.Uuid
+  listId      String   @map("list_id") @db.Uuid
+  title       String
+  description String   @default("")
+  dueDate     DateTime? @map("due_date") @db.Date
+  priority    String   @default("media")
+  categories  String[] @default([])
+  completed   Boolean  @default(false)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  list        List     @relation(fields: [listId], references: [id], onDelete: Cascade)
+
+  @@index([listId])
+  @@index([priority])
+  @@index([completed])
+  @@map("tasks")
+}
